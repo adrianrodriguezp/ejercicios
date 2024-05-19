@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function calculateSalary(hours) {
+  let hourlyRate = 10; 
+  let salary = 0;
+
+  if (hours <= 40) {
+    salary = hours * hourlyRate;
+  } else {
+    salary = 40 * hourlyRate + (hours - 40) * hourlyRate * 1.5;
+  }
+
+  return salary;
+}
+
+
+console.log(calculateSalary(35)); 
+console.log(calculateSalary(45)); 
+    </script>
+</body>
+</html>
